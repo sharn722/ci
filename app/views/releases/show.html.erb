@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>App:</strong>
+  <%= @release.app_id %>
+</p>
+
+<p>
+  <strong>Commit msg:</strong>
+  <%= @release.commit_msg %>
+</p>
+
+<%= link_to 'Back', releases_path %>

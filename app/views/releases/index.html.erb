@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Releases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>App</th>
+      <th>Commit msg</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @releases.each do |release| %>
+      <tr>
+        <td><%= release.app %></td>
+        <td><%= release.commit_msg %></td>
+        <td><%= link_to 'Show', release %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
