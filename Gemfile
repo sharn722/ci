@@ -44,3 +44,18 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :development do
+    gem 'capistrano',         require: false
+    gem 'capistrano-rbenv',   require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
+    # gem 'capistrano-helpers', require: false
+end
+
+gem 'puma'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem "rspec-rails", :group => [:development, :test]
