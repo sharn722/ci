@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :releases do
     collection do
-      post release_request
+      post :release_request
     end
   end
 
