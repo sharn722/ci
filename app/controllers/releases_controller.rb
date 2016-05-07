@@ -12,7 +12,7 @@ class ReleasesController < ApplicationController
   def show
   end
 
-  def create
+  def release_request
   end
 
   private
