@@ -14,7 +14,14 @@ class ReleasesController < ApplicationController
   def show
   end
 
+  # def new
+  #   hash = {:x => 1, :y => 2}
+  #   hash.each{|k,v|}
+  #   render :text => hash.to_s, :format => :json
+  # end
+
   def release_request
+    render :text => params.to_s
   end
 
   private
