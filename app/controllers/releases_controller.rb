@@ -1,6 +1,8 @@
 class ReleasesController < ApplicationController
   before_action :set_release, only: [:show, :edit, :update, :destroy]
 
+  protect_from_forgery :except => [:release_request]
+
   # GET /releases
   # GET /releases.json
   def index
