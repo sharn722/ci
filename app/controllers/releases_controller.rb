@@ -16,7 +16,7 @@ class ReleasesController < ApplicationController
 
   def new
 
-    system("cd /c/Users/sharn722/Documents/work/wallet; cap production deploy")    
+    `cd /c/Users/sharn722/Documents/work/wallet; cap production deploy` 
     hash = {:x => 1, :y => 2}
     hash.each{|k,v|}
     render :text => hash.to_s, :format => :json
