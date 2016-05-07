@@ -23,8 +23,8 @@ class ReleasesController < ApplicationController
   end
 
   def release_request
-    system("cd /c/Users/sharn722/Documents/work/wallet; cap production deploy") 
-    
+    system("cd /home/deploy/work/wallet; cap production deploy") 
+
     render :text => params.to_s
   end
 
