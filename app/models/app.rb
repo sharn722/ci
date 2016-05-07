@@ -1,3 +1,3 @@
 class App < ActiveRecord::Base
-	hase_many :releses
+	has_many :releses
 end
