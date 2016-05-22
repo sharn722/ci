@@ -56,6 +56,8 @@ end
 
 gem 'puma'
 
+gem 'sidekiq'
+
 gem 'dotenv-rails', :groups => [:development, :test]
 
 gem "rspec-rails", :group => [:development, :test]
