@@ -24,7 +24,7 @@ class ReleasesController < ApplicationController
 
   def release_request
     #system("./wallet_deploy.sh") 
-    DeployWorker.perform
+    DeployWorker.perform_async
 
     render :text => params.to_s
   end
