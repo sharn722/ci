@@ -1,7 +1,7 @@
 class DeployWorker
   include Sidekiq::Worker
   def perform
-    system("./wallet_deploy.sh")  
+    system("sudo -u deploy ./wallet_deploy.sh")  
     # do something
   end
 end
